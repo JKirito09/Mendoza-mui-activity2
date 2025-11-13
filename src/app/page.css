@@ -9,7 +9,6 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: white;
   font-family: 'Barlow Condensed', sans-serif;
   overflow: hidden;
@@ -20,7 +19,6 @@
   background-image: url('/background-home-desktop.jpg');
 }
 
-/* Tablet View */
 @media (max-width: 1024px) {
   .hero {
     background-image: url('/background-home-tablet.jpg');
