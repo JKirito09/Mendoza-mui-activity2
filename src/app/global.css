@@ -46,6 +46,8 @@
   padding: 2rem 4rem;
   position: relative;
   z-index: 1000; /* Increased z-index */
+  position: absolute;
+      width: 100%;
 }
 
 /* === LOGO STYLES === */
@@ -103,9 +105,11 @@
   -ms-user-select: none; /* IE/Edge */
 }
 
-.nav-links li span {
+.nav-links li a {
   font-weight: 700;
   margin-right: 8px;
+  color: white;
+  text-decoration: none;
 }
 
 /* Ensure clickable area covers the entire list item */
@@ -157,6 +161,7 @@
   gap: 5px;
   z-index: 1002; /* Higher than everything */
   position: relative;
+
 }
 
 .menu-toggle span {
@@ -264,8 +269,10 @@
 /* === DESTINATION SECTION === */
 .destination-content {
   padding: 2rem 0;
+  padding-top: 10rem;
   position: relative;
   z-index: 1;
+  background-image: url('/background-destination-desktop.jpg');
 }
 
 .destination-main {
@@ -393,11 +400,14 @@
 /* === CREW SECTION === */
 .crew-content {
   padding: 2rem 0;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 1;
+   background-image: url('/background-crew-desktop.jpg');
+   background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .crew-main {
@@ -506,12 +516,16 @@
 /* === TECHNOLOGY SECTION === */
 .technology-content {
   padding: 2rem 0;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 1;
+  background-image: url('/background-technology-desktop.jpg');
+   background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 .technology-main {
   display: flex;
